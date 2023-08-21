@@ -10,6 +10,8 @@
 #else
 #define HECDSS_API __declspec(dllimport)
 #endif
+#elif defined(SWIG)
+#define HECDSS_API
 #else
 #define HECDSS_API __attribute__((visibility("default")))
 #endif
